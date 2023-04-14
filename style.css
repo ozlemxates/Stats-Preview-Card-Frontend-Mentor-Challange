@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading-stats: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+    --inter: 'Inter', sans-serif;
+    --lexend: 'Lexend Deca', sans-serif;
+}
+body {
+    background-color: var(--main-background);
+}
+
+main { 
+    background-color: var(--card-background);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:90px auto;
+    display: grid;
+    max-width: 1050px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.content {
+    padding: 60px;
+    display: flex;
+    /* justify-content: start; */
+    flex-direction: column;
+    gap: 50px;
+}
+
+h1, .bold {
+    color: var(--main-heading-stats);
+}
+
+p {
+    color: var(--main-paragraph);
+    font-size: 15px;
+    /* renge tekrar bak */
+}
+
+h1,p, .bold, .soft {
+    font-family: var(--lexend);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+.companies, .templates, .queries {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.companies .soft, .templates, .queries{
+    text-transform:uppercase ;
+}
+
+.bold {
+    font-size: 30px;
+    font-family: var(--inter);
+    font-weight: 700;
+}
+
+.soft {
+    color: var(--stat-headings);
+}
+
+
+.accent {
+    color: var(--accent);
+}
+
+/* .picture {} */
+img {
+    position: relative;
+}
+
+.attribution {
+    font-size: 11px; text-align: center; 
+    color: aliceblue;
+}
+.attribution a { color: hsl(210, 2%, 82%); }
