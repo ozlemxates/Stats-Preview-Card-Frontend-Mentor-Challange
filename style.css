@@ -26,7 +26,7 @@ main {
     margin:90px auto;
     display: grid;
     max-width: 1050px;
-    height: 440px;
+    min-height: 440px;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -100,11 +100,7 @@ h1,p, .bold, .soft {
 .attribution a { color: hsl(210, 2%, 82%); }
 
 @media (max-width:768px) {
-    body {
-        
-    }
     main {
-        height: 130vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 300px 1fr;
@@ -112,25 +108,24 @@ h1,p, .bold, .soft {
         "picture"
         "cont"
         ;
-}
+        text-align: center;
+    }
 
-.content {
-
+    .content {
     grid-row: 2/ 2 span;
+    padding: 20px;
+    }
 
-}
-.picture {
+    .picture {
     grid-row: 1/ 1 span;
-}
-.stats {
+    }
+
+    .stats {
     display: flex;
     text-align: center;
     flex-direction: column;
     gap:24px
-}
+    }
 }
 
- @media (max-width:375px) {
-   
-    
- }
+ 
